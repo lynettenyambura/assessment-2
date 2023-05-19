@@ -1,16 +1,15 @@
 
-const baseUrl ='https:jsonplaceholder.typicode.com/posts';
+// const baseUrl ='https:jsonplaceholder.typicode.com/posts';
 
-fetch('https://jsonplaceholder.typicode.com/posts/', {
+fetch('https://jsonplaceholder.typicode.com/posts/5', {
   method: 'PUT',
   body: JSON.stringify({
+    id: 5,
+    title: 'weather',
+    body: 'sun',
     userId: 1,
-    id: 2,
-    title: 'qui est esse',
-    body:"est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-},
-    }),
-  headers:{
+  }),
+  headers: {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })

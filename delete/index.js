@@ -1,4 +1,4 @@
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
+fetch('https://jsonplaceholder.typicode.com/posts/10', {
   method: 'DELETE',
 });
